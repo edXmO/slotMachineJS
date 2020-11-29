@@ -1,0 +1,130 @@
+html {
+    font-size: 70%;
+    box-sizing: border-box;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+#textarea-historial {
+    resize:none;
+}
+
+/* Colocacion CSS Grid Slots de Tragaperras */
+.slot-machine {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 470px;
+}
+
+/* CSS Grid - Dsiplay Grid
+Colocación filas de 3 elementos
+Espacio padding entre elementos y botones 5,10px */
+.slot-container-1 {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 5px;
+    grid-column-gap: 10px;   
+}
+
+.slot-container-1 {
+    display: flex;
+    /* Mismo espacio entre ellos */
+    justify-content: space-between;
+    /*  */
+    width: 100%;
+    height: 30%;
+     
+}
+
+.img-frutas {
+    /* background-color: pink; */
+    width: 33%;
+    height: 128px; 
+}
+
+.slot-container {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    padding: 5px;
+    grid-column-gap: 10px;
+}
+
+/* Botones e inputs */
+.button-div > button {
+    align-items: center;
+    grid-template-columns: repeat(1,1fr);
+    margin-bottom: 6px;
+    padding: 6px;
+    grid-column-gap: 10px; 
+    width: 100%;
+}
+
+.insert-monedas > input{
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 6px;
+    grid-gap: 10px; 
+}
+
+#btn-insert {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 388px;
+}
+
+#btn-1 {
+    margin: 0 auto;
+    width: 50%;
+    height: 35px;
+}
+
+
+/* Titulos */
+
+.titulos > h2 {
+    padding: 6px;
+    text-align: center; 
+    vertical-align: middle;
+}
+
+/* Estilado de los botones */
+/* button {
+    background-color: #fff;
+    border-radius: 3px;
+    border: 1px solid #c4c4c4;
+    background-color: transparent;
+    font-size: 1.5rem;
+    color: #333;
+    background-image: linear-gradient(to bottom, transparent, transparent 50%, rfgba(0,0,0,.04));
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,.05), inset 0 1px 0 0 rgba(255,255,255,.45), inset 0 -1px 0 0 rgba(255,255,255,.15), 0 1px 0 0 rgba(255,255,255,.15);
+    text-shadow: 0 1px rgba(255,255,255,.4);
+}
+
+button:hover {
+    background-color: #1cb360fa;
+} */
+
+/*  */
+.img-decor-left {
+    width: 35px;
+    float: left;
+}
+.img-decor-right {
+    width: 35px;
+    float: right;
+}
+
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/style.css">
+    <script src="/scripts/tragaperras.js"></script>
+</head>
+
+<body>
+    <div class="slot-machine">
+        <div class="slot-container">
+            <div><img class="img-decor-left" src="/img/slot-machine.png" alt=""><img class="img-decor-right"
+                    src="/img/slot-machine.png" alt="">
+                <div id="btn-insert"><button id="btn-1" onclick="insertCoin()">Insertar Monedas</button></div>
+            </div>
+            <div class="button-div"></div>
+            <div class="titulos">
+                <h2 id="monedas-disp">Monedas Disponibles: </h2>
+            </div>
+        </div>
+        <div class="insert-monedas">
+            <input type="number" id="input-coins" placeholder="Insert Coin">
+        </div>
+        <div class=slot-container-1>
+            <div class="img-frutas"><img id="slot-1" src="/img/Manzana.png" alt=""></div>
+            <div class="img-frutas"><img id="slot-2" src="/img/Piña.png" alt=""></div>
+            <div class="img-frutas"><img id="slot-3" src="/img/Zanahoria.png" alt=""></div>
+        </div>
+        <div class="titulos">
+            <h2>¡Tira para probar suerte!</h2>
+        </div>
+
+        <div class="button-div"><button class="btn" onclick="spin()">Tirar</button></div>
+        <div class="button-div"><button class="btn" id="coins" onclick="stop()">STOP!</button></div>
+        <div class="titulos">
+            <h2>Historial de jugadas</h2>
+        </div>
+        <div id="historial-jugadas">
+            <textarea readonly name="historial" id="textarea-historial" cols="64" rows="6"></textarea>
+        </div>
+        <div class="slot-container">
+            <div class="button-div"><button class="btn">Salir</button></div>
+        </div>
+    </div>
+</body>
+
+</html>
