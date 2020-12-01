@@ -59,6 +59,8 @@ function insertCoin() {
         document.getElementById('monedas-disp').innerHTML = `Monedas disponibles: ${monedasIntroducidas}`
         document.getElementById('input-coins').disabled = true;
         document.getElementById('input-coins').value = 'Insert Coin';
+    } else if (document.getElementById('input-coins').value == "") {
+        alert("Inserte Monedas Para Jugar");
     }
 }
 
@@ -76,6 +78,8 @@ function spin() {
         intervalIdOne = setInterval(spinSlotOne, 100);
         intervalIdTwo = setInterval(spinSlotTwo, 100);
         intervalIdThree = setInterval(spinSlotThree, 100);
+        document.getElementById('spin').disabled = true;
+        document.getElementById('coins').disabled = false;
     }
 }
 
@@ -96,6 +100,10 @@ function stop() {
     setTimeout(() => {
         document.getElementById('monedas-disp').innerHTML = `Monedas disponibles: ${monedas}`
     }, 6500);
+    setTimeout(() => {
+        document.getElementById('spin').addEventListener('click', changeButton('spin'));
+    }, 6500)
+
 }
 
 // Testeando las monedas ganadas en base a que numeros han salido.
@@ -142,4 +150,11 @@ function exit() {
     document.getElementById("input-coins").disabled;
 }
 
+//Disabling spin or stop button whenever other is available
+function changeButton(btn) {
+    if (document.getElementById(btn).disabled == true) {
+        document.getElementById('coins').disabled = true;
+    }
+    document.getElementById('spin').disabled = false;
+}
 
