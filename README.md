@@ -1,9 +1,13 @@
+![GitHub commit activity](https://img.shields.io/github/commit-activity/m/edXmO/slotMachineJS)
+![GitHub last commit](https://img.shields.io/github/last-commit/edXmO/slotMachineJS)
+
 # Table of contents 
 
 * [slotMachineJS](#slotMachineJs)
 * [Introduction](#Introduction)
 * [Technologies](#Technologies)
 * [Contributing](#Contributing)
+* [Status](#Demo)
 
 # slotMachineJS
 
@@ -25,3 +29,5 @@ Project is created with:
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
+
+## Demo - In progress
