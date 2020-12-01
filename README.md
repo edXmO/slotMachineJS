@@ -30,4 +30,8 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
+<<<<<<< HEAD
 ## Demo - In progress
+=======
+## Demo - In progress
+>>>>>>> aae0bc8eae76141f51c40a6a6ce9a996114a2765
