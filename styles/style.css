@@ -127,4 +127,11 @@ button:hover {
     float: right;
 }
 
+/* Speaker */
+
+#speaker {
+    width: 35px;
+    padding: 5px;
+    margin: auto; 
+}
 
