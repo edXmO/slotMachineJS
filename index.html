@@ -15,7 +15,8 @@
         <div class="slot-container">
             <div><img class="img-decor-left" src="/img/slot-machine.png" alt=""><img class="img-decor-right"
                     src="/img/slot-machine.png" alt="">
-                <div id="btn-insert"><button id="btn-1" onclick="insertCoin()">Insertar Monedas</button></div>
+                <div id="btn-insert"><button id="btn-1" onclick="insertCoin(),soundInsertCoin()">Insertar
+                        Monedas</button></div>
             </div>
             <div class="button-div"></div>
             <div class="titulos">
@@ -23,7 +24,7 @@
             </div>
         </div>
         <div class="insert-monedas">
-            <input type="number" id="input-coins" placeholder="Insert Coin">
+            <input value="undefined" type="number" id="input-coins" placeholder="Insert Coin">
         </div>
         <div class=slot-container-1>
             <div class="img-frutas"><img id="slot-1" src="/img/Manzana.png" alt=""></div>

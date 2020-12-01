@@ -13,5 +13,7 @@ function soundSwitch() {
 }
 
 function soundInsertCoin() {
-
+    if (document.getElementById('input-coins').disabled != false) {
+        document.getElementById('btn-1').addEventListener('click', document.getElementById('insert-sound').play());
+    }
 }

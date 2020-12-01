@@ -53,14 +53,14 @@ function spinSlotThree() {
     return num3;
 }
 function insertCoin() {
-    if (!document.getElementById('input-coins').disabled) {
+    if (document.getElementById('input-coins').value == "" || document.getElementById('input-coins').value == undefined) {
+        alert("Inserte Monedas Para Jugar");
+    } else if (!document.getElementById('input-coins').disabled) {
         monedasIntroducidas = document.getElementById('input-coins').value;
         monedas += parseInt(monedasIntroducidas);
         document.getElementById('monedas-disp').innerHTML = `Monedas disponibles: ${monedasIntroducidas}`
         document.getElementById('input-coins').disabled = true;
         document.getElementById('input-coins').value = 'Insert Coin';
-    } else if (document.getElementById('input-coins').value == "") {
-        alert("Inserte Monedas Para Jugar");
     }
 }
 
