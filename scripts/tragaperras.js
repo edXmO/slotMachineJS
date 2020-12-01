@@ -58,13 +58,13 @@ function insertCoin() {
         monedas += parseInt(monedasIntroducidas);
         document.getElementById('monedas-disp').innerHTML = `Monedas disponibles: ${monedasIntroducidas}`
         document.getElementById('input-coins').disabled = true;
+        document.getElementById('input-coins').value = 'Insert Coin';
     }
 }
 
 function actualizaMonedas() {
     monedas += parseInt(document.getElementById('input-coins').value);
     document.getElementById('monedas-disp').innerHTML = `Monedas disponibles: ${monedas}`
-    document.getElementById('input-coins').value = 'Insert Coin';
 }
 
 function spin() {
@@ -133,5 +133,9 @@ function testingWin(opt1, opt2, opt3) {
     }
 }
 
+// Logic for the button to exit the game. 
+function exit() {
+
+}
 
 
