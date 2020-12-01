@@ -33,7 +33,7 @@
             <h2>¡Tira para probar suerte!</h2>
         </div>
 
-        <div class="button-div"><button class="btn" onclick="spin()">Tirar</button></div>
+        <div class="button-div"><button class="btn" id="spin" onclick="spin()">Tirar</button></div>
         <div class="button-div"><button class="btn" id="coins" onclick="stop()">STOP!</button></div>
         <div class="titulos">
             <h2>Historial de jugadas</h2>
@@ -42,7 +42,7 @@
             <textarea readonly name="historial" id="textarea-historial" cols="64" rows="6"></textarea>
         </div>
         <div class="slot-container">
-            <div class="button-div"><button class="btn">Salir</button></div>
+            <div class="button-div"><button class="btn" onclick="exit(monedas)">Salir</button></div>
         </div>
     </div>
 </body>
