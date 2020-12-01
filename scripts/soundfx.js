@@ -1,45 +1,24 @@
 
-// Loading the background music onload
-// window.addEventListener("load", () => {
-//     document.getElementById("img-speaker").addEventListener('click', playSound());
-// })
+// Background music onload
 
+// var audio = document.getElementById("casino-audio");
 
-function playSound() {
-    var player = document.getElementById("casino-audio")
-        (player.paused == true) ? soundOn(0) : soundOn(1)
-}
+window.addEventListener("click", () => {
+    document.getElementById("img-speaker").addEventListener('click', soundSwitch(document.getElementById("casino-audio")));
 
-function soundOn(state) {
-    var player = document.getElementById("casino-audio");
-    var src = "/audio/casino-pokemon.mp3";
+})
 
-    switch (state) {
-        case 0:
-            player.src = src;
-            player.load();
-            player.play();
-            player_state = 1;
-            break;
-        case 1:
-            player.pause();
-            player.currentTime = 0;
-            player.src = "";
-            player_state = 0;
-            break;
+// Button turning on/off audio -
+function soundSwitch(music) {
+    currentValue = document.getElementById('img-speaker').value;
+    if (currentValue == "off") {
+        document.getElementById('img-speaker').value = "on";
+        document.getElementById('img-speaker').src = "/img/speaker-on.png";
+        music.play()
+    } else {
+        document.getElementById('img-speaker').value = "off";
+        document.getElementById('img-speaker').src = "/img/speaker-off.png";
+        music.pause();
     }
 }
-
-
-
-// function playSound() {
-//     var audio = document.getElementById("casino-audio");
-//     audio.play()
-// }
-
-// function muteSound() {
-//     var player = document.getElementById("casino-audio");
-//     player.pause();
-//     player.src = player.src;
-// }
 
