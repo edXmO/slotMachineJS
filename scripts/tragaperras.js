@@ -83,19 +83,15 @@ function spin() {
 function stop() {
     setTimeout(() => {
         clearInterval(intervalIdOne);
-        // console.log(num1)
     }, 1000);
     setTimeout(() => {
         clearInterval(intervalIdTwo);
-        // console.log(num2)
     }, 2000);
     setTimeout(() => {
         clearInterval(intervalIdThree);
-        // console.log(num3)
     }, 3000);
     setTimeout(() => {
         document.getElementById('coins').addEventListener('click', testingWin(num1, num2, num3));
-        console.log(monedas);
     }, 6500);
     setTimeout(() => {
         document.getElementById('monedas-disp').innerHTML = `Monedas disponibles: ${monedas}`
@@ -133,9 +129,17 @@ function testingWin(opt1, opt2, opt3) {
     }
 }
 
+
 // Logic for the button to exit the game. 
 function exit() {
-
+    monedas = 0;
+    document.getElementById('monedas-disp').innerHTML = `Monedas disponibles: ${monedas}`
+    if (document.getElementById('input-coins').disabled = true) {
+        document.getElementById('input-coins').disabled = false;
+    }
+    //Clear textarea
+    document.getElementById("textarea-historial").value = "";
+    document.getElementById("input-coins").disabled;
 }
 
 
