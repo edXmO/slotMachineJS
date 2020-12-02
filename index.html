@@ -19,7 +19,7 @@
             <div><img class="img-decor-left" src="/img/slot-machine.png" alt=""><img class="img-decor-right"
                     src="/img/slot-machine.png" alt="">
                 <div id="btn-insert"><button id="btn-1" class="slot-button"
-                        onclick="insertCoin(),soundInsertCoin()">Insert Coins: </button></div>
+                        onclick="insertCoin(),soundInsertCoin()">Insert Coins </button></div>
             </div>
             <div class="button-div"></div>
             <div class="titulos">
@@ -43,16 +43,16 @@
             <h2>Historial de jugadas</h2>
         </div>
         <div id="historial-jugadas">
-            <textarea readonly name="historial" id="textarea-historial" cols="62" rows="4"></textarea>
+            <textarea readonly name="historial" id="textarea-historial" cols="62" rows="5"></textarea>
         </div>
         <div class="slot-container">
-            <div class="button-div"><button class="slot-button" onclick="exit(monedas)">Salir</button></div>
+            <div class="button-div">
+                <input id="speaker" value="off" type="image" onclick="soundSwitch()" src="/img/speaker-off.png" alt="">
+                <audio id="casino-audio" src="/audio/casino-pokemon.mp3"></audio>
+                <audio id="insert-sound" src="/audio/insert-coin.mp3"></audio>
+                <button class="slot-button" onclick="exit(monedas)">Salir</button>
+            </div>
         </div>
-    </div>
-    <div id="speaker"><input value="off" type="image" id="img-speaker" onclick="soundSwitch()"
-            src="/img/speaker-off.png" alt="">
-        <audio id="casino-audio" src="/audio/casino-pokemon.mp3"></audio>
-        <audio id="insert-sound" src="/audio/insert-coin.mp3"></audio>
     </div>
 </body>
 
