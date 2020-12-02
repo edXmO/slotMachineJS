@@ -1,6 +1,8 @@
 html {
     font-size: 70%;
     box-sizing: border-box;
+    background-color:#3bd396ce;
+    
 }
 
 
@@ -8,6 +10,7 @@ html {
     padding: 0;
     margin: 0;
     box-sizing: inherit;
+
 }
 
 /* Textarea */
@@ -23,18 +26,21 @@ html {
     text-align: center;
     width: 97%;
     margin: 0 auto;
+    background: linear-gradient(to bottom,#e8ffe8 5%, #a7ff83 100%);
+    border-radius: 5px;
 }
 
 /* Colocacion CSS Grid Slots de Tragaperras */
 .slot-machine {
-    box-shadow: 3px 4px 4px 1px #fff6af;
-    border: 1px solid #ccc;
+    box-shadow: 3px 4px 4px 1px #a7ff83;
+    border: 1px solid #e8ffe8;
     border-radius: 5px;
     position: absolute;
     top: 50%; 
     left: 50%;
     transform: translate(-50%, -50%);
     width: 480px;
+    background-color: #e8ffe8;
 }
 
 /* CSS Grid - Dsiplay Grid
@@ -61,9 +67,10 @@ Espacio padding entre elementos y botones 5,10px */
     /* background-color: pink; */
     width: 33%;
     height: 135px;
-    border:2px solid #070201;
     border-radius:10px;
     background-color: white;
+    background: linear-gradient(to bottom,#e8ffe8 5%, #a7ff83 100%);
+    box-shadow: 3px 4px 4px 1px #a7ff83;
 }
 
 .img-frutas > img {
@@ -92,8 +99,7 @@ Espacio padding entre elementos y botones 5,10px */
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    margin: 0 auto;
-    
+
 }
 
 .insert-monedas > input{
@@ -101,11 +107,14 @@ Espacio padding entre elementos y botones 5,10px */
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 18%;
     grid-gap: 10px; 
     margin-top: auto;
     margin-bottom: 5px;
     height: 35px;
+    border-radius: 5px;
+    background: linear-gradient(to bottom,#a7ff83, 5%, #e8ffe8 100%);
+
 }
 
 #btn-insert {
@@ -138,24 +147,24 @@ h2 {
 
 /* Estilado de los botones */
 .slot-button {
-	box-shadow: 0px 1px 0px 0px #fff6af;
-	background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
-	background-color:#ffec64;
+	box-shadow: 0px 1px 0px 0px #17b978;
+	background: linear-gradient(to bottom,#17b978 5%, #a7ff83 100%);
+	background-color:#17b978;
 	border-radius:10px;
-	border:2px solid #ffaa22;
+	border:2px solid#17b978;
 	align-items: center;
     justify-content: center;
 	cursor:pointer;
-	color:#333333;
+	color: #0f0f0f;
 	font-family: 'Space Mono', monospace;
     font-size: 14px;
 	padding:10px 70px;
 	text-decoration:none;
-	text-shadow:3px 1px 2px #ffee66;
+	text-shadow:3px 1px 2px#ccc;
 }
 .slot-button:hover {
-	background:linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
-	background-color:#ffab23;
+	background:linear-gradient(to bottom, #a7ff83 5%,#17b978 100%);
+	background-color:#a7ff83;
 }
 .slot-button:active {
 	position:relative;
