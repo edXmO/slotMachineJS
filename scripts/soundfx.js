@@ -1,4 +1,4 @@
-// Button turning on/off audio -
+// Button turning on/off audio 
 function soundSwitch() {
     currentValue = document.getElementById('img-speaker').value;
     if (currentValue == "off") {
@@ -12,6 +12,7 @@ function soundSwitch() {
     }
 }
 
+//Insert coin sound fx
 function soundInsertCoin() {
     if (document.getElementById('input-coins').disabled != false) {
         document.getElementById('btn-1').addEventListener('click', document.getElementById('insert-sound').play());

@@ -1,6 +1,4 @@
-// Se trata de crear una maquina tragaperras siguiendo los siguignete pasos:
-
-// 1. Crear 3 arrays con el nombre de las imagenes  -Hecho
+// 1. Creararrays con el nombre de las imagenes  -Hecho
 // 2. Crear 3 cuadrados, en los cuales se insertaran las frutas Html - Hecho
 // 3. Generar un numero aleatorio para cada uno de las arrays - Hecho
 // 4. El usuario tiene que introducir monedas, por lo que tendremos que desactivar la opcion de insertar mas - Hecho, falta desactivar la opcion de introducir monedas

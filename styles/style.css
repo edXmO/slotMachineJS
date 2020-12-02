@@ -10,8 +10,19 @@ html {
     box-sizing: inherit;
 }
 
+/* Textarea */
+#historial-jugadas {
+    display: flex;
+
+}
+
 #textarea-historial {
     resize:none;
+    font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    text-align: center;
+    width: 97%;
+    margin: 0 auto;
 }
 
 /* Colocacion CSS Grid Slots de Tragaperras */
@@ -60,12 +71,16 @@ Espacio padding entre elementos y botones 5,10px */
 
 /* Botones e inputs */
 .button-div > button {
-    align-items: center;
     grid-template-columns: repeat(1,1fr);
     margin-bottom: 6px;
     padding: 6px;
     grid-column-gap: 10px; 
-    width: 100%;
+    width: 60%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    
 }
 
 .insert-monedas > input{
@@ -76,6 +91,9 @@ Espacio padding entre elementos y botones 5,10px */
     width: 50%;
     padding: 6px;
     grid-gap: 10px; 
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 35px;
 }
 
 #btn-insert {
@@ -88,9 +106,10 @@ Espacio padding entre elementos y botones 5,10px */
 #btn-1 {
     margin: 0 auto;
     width: 50%;
-    height: 35px;
+    height: 37px;
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
 }
-
 
 /* Titulos */
 
@@ -100,10 +119,20 @@ Espacio padding entre elementos y botones 5,10px */
     vertical-align: middle;
 }
 
-/* Estilado de los botones
-button {
+h2 {
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+}
+
+/* Estilado de los botones */
+.slot-button {
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    font-style: bold;
+    align-items: center;
+    justify-content: center;
     
-} */
+}
 /* 
 button:hover {
 } */
@@ -119,10 +148,10 @@ button:hover {
 }
 
 /* Speaker */
-
 #speaker {
     width: 35px;
     padding: 5px;
     margin: auto; 
 }
+
 

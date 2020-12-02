@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@1,400;1,700&display=swap"
+        rel="stylesheet">
     <script src="/scripts/tragaperras.js"></script>
     <script src="/scripts/soundfx.js"></script>
 </head>
@@ -15,7 +18,8 @@
         <div class="slot-container">
             <div><img class="img-decor-left" src="/img/slot-machine.png" alt=""><img class="img-decor-right"
                     src="/img/slot-machine.png" alt="">
-                <div id="btn-insert"><button id="btn-1" onclick="insertCoin(),soundInsertCoin()">Insertar
+                <div id="btn-insert"><button id="btn-1" class="slot-button"
+                        onclick="insertCoin(),soundInsertCoin()">Insertar
                         Monedas</button></div>
             </div>
             <div class="button-div"></div>
@@ -34,16 +38,16 @@
         <div class="titulos">
             <h2>¡Tira para probar suerte!</h2>
         </div>
-        <div class="button-div"><button class="btn" id="spin" onclick="spin()">Tirar</button></div>
-        <div class="button-div"><button class="btn" id="coins" onclick="stop()">STOP!</button></div>
+        <div class="button-div"><button class="slot-button" id="spin" onclick="spin()">Tirar</button></div>
+        <div class="button-div"><button class="slot-button" id="coins" onclick="stop()">STOP!</button></div>
         <div class="titulos">
             <h2>Historial de jugadas</h2>
         </div>
         <div id="historial-jugadas">
-            <textarea readonly name="historial" id="textarea-historial" cols="64" rows="6"></textarea>
+            <textarea readonly name="historial" id="textarea-historial" cols="62" rows="4"></textarea>
         </div>
         <div class="slot-container">
-            <div class="button-div"><button class="btn" onclick="exit(monedas)">Salir</button></div>
+            <div class="button-div"><button class="slot-button" onclick="exit(monedas)">Salir</button></div>
         </div>
     </div>
     <div id="speaker"><input value="off" type="image" id="img-speaker" onclick="soundSwitch()"
