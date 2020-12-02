@@ -31,5 +31,10 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 Please make sure to update tests as appropriate.
 
 
-## Demo - In progress
+## Demo 
+
+* Current state, developing the design. -v0.1
+
+![alt tag](https://media.giphy.com/media/MmwQyBW3IJUJoujcCv/source.gif)
+
 
