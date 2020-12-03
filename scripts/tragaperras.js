@@ -73,9 +73,9 @@ function spin() {
     } else {
         monedas -= 1;
         document.getElementById('monedas-disp').innerHTML = `Monedas disponibles: ${monedas}`
-        intervalIdOne = setInterval(spinSlotOne, 100);
-        intervalIdTwo = setInterval(spinSlotTwo, 100);
-        intervalIdThree = setInterval(spinSlotThree, 100);
+        intervalIdOne = setInterval(spinSlotOne, 80);
+        intervalIdTwo = setInterval(spinSlotTwo, 80);
+        intervalIdThree = setInterval(spinSlotThree, 80);
         document.getElementById('spin').disabled = true;
         document.getElementById('coins').disabled = false;
     }

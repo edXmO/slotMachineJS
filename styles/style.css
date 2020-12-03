@@ -1,6 +1,8 @@
 html {
     font-size: 70%;
     box-sizing: border-box;
+    background-color:#3bd396ce;
+    
 }
 
 
@@ -8,32 +10,36 @@ html {
     padding: 0;
     margin: 0;
     box-sizing: inherit;
+
 }
 
 /* Textarea */
 #historial-jugadas {
     display: flex;
-
 }
 
 #textarea-historial {
     resize:none;
-    font-family: 'Space Mono', monospace;
+    font-family: 'Typographic Picnic', monospace;
     font-size: 12px;
     text-align: center;
     width: 97%;
     margin: 0 auto;
+    background: linear-gradient(to bottom,#e8ffe8 5%, #a7ff83 100%);
+    border-radius: 5px;
 }
 
 /* Colocacion CSS Grid Slots de Tragaperras */
 .slot-machine {
-    border: 1px solid #ccc;
+    box-shadow: 3px 4px 4px 1px #a7ff83;
+    border: 1px solid #e8ffe8;
     border-radius: 5px;
     position: absolute;
     top: 50%; 
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 470px;
+    width: 480px;
+    background-color: #e8ffe8;
 }
 
 /* CSS Grid - Dsiplay Grid
@@ -43,7 +49,8 @@ Espacio padding entre elementos y botones 5,10px */
     display: grid;
     grid-template-columns: repeat(3,1fr);
     padding: 5px;
-    grid-column-gap: 10px;   
+    grid-column-gap: 10px;
+     
 }
 
 .slot-container-1 {
@@ -52,14 +59,25 @@ Espacio padding entre elementos y botones 5,10px */
     justify-content: space-between;
     /*  */
     width: 100%;
-    height: 30%;
-     
+    height: 30%; 
 }
 
 .img-frutas {
     /* background-color: pink; */
     width: 33%;
-    height: 128px; 
+    height: 135px;
+    border-radius:10px;
+    background-color: white;
+    background: linear-gradient(to bottom,#e8ffe8 5%, #a7ff83 100%);
+    box-shadow: 3px 4px 4px 1px #17b978;
+}
+
+.img-frutas > img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 10px;
+   
 }
 
 .slot-container {
@@ -80,7 +98,6 @@ Espacio padding entre elementos y botones 5,10px */
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    
 }
 
 .insert-monedas > input{
@@ -88,12 +105,14 @@ Espacio padding entre elementos y botones 5,10px */
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
-    padding: 6px;
+    width: 18%;
     grid-gap: 10px; 
     margin-top: auto;
-    margin-bottom: auto;
+    margin-bottom: 5px;
     height: 35px;
+    border-radius: 5px;
+    background: linear-gradient(to bottom,#a7ff83, 5%, #e8ffe8 100%);
+
 }
 
 #btn-insert {
@@ -105,10 +124,9 @@ Espacio padding entre elementos y botones 5,10px */
 
 #btn-1 {
     margin: 0 auto;
-    width: 50%;
-    height: 37px;
-    font-family: 'Space Mono', monospace;
+    height:40px;
     font-size: 14px;
+    
 }
 
 /* Titulos */
@@ -117,25 +135,39 @@ Espacio padding entre elementos y botones 5,10px */
     padding: 6px;
     text-align: center; 
     vertical-align: middle;
+    margin: 5px;
 }
 
 h2 {
-    font-family: 'Space Mono', monospace;
-    font-size: 14px;
+    font-family: 'Typographic Picnic', monospace;
+    font-size: 16px;
 }
 
 /* Estilado de los botones */
 .slot-button {
-    font-family: 'Space Mono', monospace;
-    font-size: 14px;
-    font-style: bold;
-    align-items: center;
+	box-shadow: 0px 1px 0px 0px #17b978;
+	background: linear-gradient(to bottom,#17b978 5%, #a7ff83 100%);
+	background-color:#17b978;
+	border-radius:10px;
+	border:2px solid#17b978;
+	align-items: center;
     justify-content: center;
-    
+	cursor:pointer;
+	color: #0f0f0f;
+	font-family: 'Typographic Picnic', monospace;
+    font-size: 14px;
+	padding:10px 70px;
+	text-decoration:none;
+    text-shadow:3px 1px 2px #ccc;
 }
-/* 
-button:hover {
-} */
+.slot-button:hover {
+	background:linear-gradient(to bottom, #a7ff83 5%,#17b978 100%);
+	background-color:#a7ff83;
+}
+.slot-button:active {
+	position:relative;
+	top:1px;
+}
 
 /*  */
 .img-decor-left {
@@ -151,7 +183,7 @@ button:hover {
 #speaker {
     width: 35px;
     padding: 5px;
-    margin: auto; 
+    float: right;
 }
 
 
