@@ -16,12 +16,11 @@ html {
 /* Textarea */
 #historial-jugadas {
     display: flex;
-
 }
 
 #textarea-historial {
     resize:none;
-    font-family: 'Space Mono', monospace;
+    font-family: 'Typographic Picnic', monospace;
     font-size: 12px;
     text-align: center;
     width: 97%;
@@ -70,7 +69,7 @@ Espacio padding entre elementos y botones 5,10px */
     border-radius:10px;
     background-color: white;
     background: linear-gradient(to bottom,#e8ffe8 5%, #a7ff83 100%);
-    box-shadow: 3px 4px 4px 1px #a7ff83;
+    box-shadow: 3px 4px 4px 1px #17b978;
 }
 
 .img-frutas > img {
@@ -99,7 +98,6 @@ Espacio padding entre elementos y botones 5,10px */
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-
 }
 
 .insert-monedas > input{
@@ -141,8 +139,8 @@ Espacio padding entre elementos y botones 5,10px */
 }
 
 h2 {
-    font-family: 'Space Mono', monospace;
-    font-size: 14px;
+    font-family: 'Typographic Picnic', monospace;
+    font-size: 16px;
 }
 
 /* Estilado de los botones */
@@ -156,11 +154,11 @@ h2 {
     justify-content: center;
 	cursor:pointer;
 	color: #0f0f0f;
-	font-family: 'Space Mono', monospace;
+	font-family: 'Typographic Picnic', monospace;
     font-size: 14px;
 	padding:10px 70px;
 	text-decoration:none;
-	text-shadow:3px 1px 2px#ccc;
+    text-shadow:3px 1px 2px #ccc;
 }
 .slot-button:hover {
 	background:linear-gradient(to bottom, #a7ff83 5%,#17b978 100%);
