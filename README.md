@@ -30,6 +30,13 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 Please make sure to update tests as appropriate.
 
+## Demo 
 
-## Demo - In progress
+* Current state,rearranged some elements, changed color palette and font style to match the theme I wanted. -v0.2
+
+![alt tag](https://media.giphy.com/media/Tg2Qrj0uJInGCLlpko/source.gif)
+
+* Current state, developing the design. -v0.1
+
+![alt tag](https://media.giphy.com/media/MmwQyBW3IJUJoujcCv/source.gif)
 
