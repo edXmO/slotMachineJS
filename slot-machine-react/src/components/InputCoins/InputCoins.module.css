@@ -1,0 +1,5 @@
+.InputCoins {
+    background-color: #ccc;
+    /* row-start / col-start / row-end / col-end */
+    grid-area: 2 / 1 / 3 / 4;
+}

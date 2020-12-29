@@ -1,0 +1,8 @@
+.SlotContainer {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr 2fr 1fr 2fr 0.75fr;
+    margin: 10px auto;
+    height: 95vh;
+    width: 70vh;
+}
