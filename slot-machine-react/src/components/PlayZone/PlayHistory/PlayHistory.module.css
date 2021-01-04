@@ -1,0 +1,10 @@
+.TextArea {
+    resize:none;
+    font-family: 'Typographic Picnic', monospace;
+    font-size: 12px;
+    text-align: center;
+    width: 97%;
+    margin: auto;
+    background: linear-gradient(to bottom,#e8ffe8 5%, #a7ff83 100%);
+    border-radius: 5px;
+}

@@ -1,4 +1,10 @@
 .Exit {
-    background-color: crimson;
+    background: linear-gradient(to bottom,#e8ffe8 50%, #a7ff83 100%);
     grid-area: 6 / 1 / 7 / 4;
+}
+
+.BtnContainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 10px;
 }

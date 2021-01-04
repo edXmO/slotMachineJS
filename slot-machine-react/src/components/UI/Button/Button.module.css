@@ -1,0 +1,27 @@
+.Button {
+    box-shadow: 0px 1px 0px 0px #17b978;
+	background: linear-gradient(to bottom,#17b978 5%, #a7ff83 100%);
+	background-color:#17b978;
+	border-radius:10px;
+	border:2px solid#17b978;
+	align-items: center;
+    justify-content: center;
+	cursor:pointer;
+	color: #0f0f0f;
+	font-family: 'Typographic Picnic', monospace;
+    font-size: 14px;
+	padding:5px 70px;
+	text-decoration:none;
+    text-shadow:3px 1px 2px #ccc;
+    outline: none;
+}
+
+.Button:hover{
+    background:linear-gradient(to bottom, #a7ff83 5%,#17b978 100%);
+	background-color:#a7ff83;
+}
+
+.Button:active {
+    position:relative;
+	top:1px;
+}

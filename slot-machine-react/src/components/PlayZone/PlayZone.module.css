@@ -1,4 +1,10 @@
 .PlayZone {
-    background-color: chocolate;
+    background: linear-gradient(to bottom,#a7ff83 50%, #e8ffe8 100%);
     grid-area: 4 / 1 / 6 / 4;
+}
+
+.BtnContainer {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px 10px;
 }

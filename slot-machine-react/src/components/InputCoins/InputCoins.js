@@ -1,14 +1,32 @@
 import React from 'react';
 import classes from './InputCoins.module.css';
-import Aux from '../../hoc/Auxiliary/Auxiliary.js';
+import Button from '../UI/Button/Button';
 
 const inputCoins = (props) => {
+
     return (
         <div className={classes.InputCoins}>
-            <button>Insert Coin!</button>
-            <p></p>
-            <input />
-        </div>
+            <div className={classes.InsertCoins}>
+                {!props.onPlay ?
+                    <Button
+                        click={props.gameStateHandler, props.insertCoins}
+                        text="Insert Coin" />
+                    : <p>Playing!</p>}
+            </div>
+            {props.onPlay ?
+                <p>Total coins: {props.coins}</p>
+                : null}
+            < div className={classes.Input}>
+                {/* If user inputs coins, input no longer shows */}
+                {!props.onPlay ?
+                    <input
+                        type="number"
+                        value={props.coins}
+                        onChange={props.changeCoinsHandler}
+                    />
+                    : null}
+            </div>
+        </div >
     )
 
 }

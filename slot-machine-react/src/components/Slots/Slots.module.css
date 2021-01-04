@@ -1,5 +1,14 @@
 .Slots {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 10px;
+    padding: 5px;
     background-color: blueviolet;
     /* row-start / col-start / row-end / col-end */
     grid-area: 3 / 1 / 4 / 4;
+    background: linear-gradient(to bottom,#e8ffe8 5%, #a7ff83 100%);
 }
+
+    
+    
+    
